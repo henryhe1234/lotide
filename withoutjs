@@ -14,4 +14,16 @@ const assertArraysEqual = (array1, array2) => {
 
   }
 };
-assertArraysEqual([1, 2, "3"], [3, 2, 1]);
+
+const without = (sourceArray, target) => {
+  let answer = sourceArray.filter(function (current) {
+    if (!target.includes(current)) {
+      return current;
+    }
+  });
+  return answer;
+};
+console.log(without(["1", "1", 2, 2, "3", 3], [3, "1", "2", "0"]));
+const words = ["hello", "world", "lighthouse"];
+console.log(without(words, ["lighthouse"]));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
