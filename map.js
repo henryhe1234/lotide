@@ -6,4 +6,5 @@ const map = function(array, callback) {
   }
   return results;
 };
-console.log(map(words,e => e.length));
+// console.log(map(words,e => e.length));
+module.exports = map;

@@ -6,14 +6,7 @@ const eqArrays = (array1, array2) => {
   }
   return true;
 };
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2)) {
-    console.log(`${String.fromCodePoint(0x1F600)}Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`${String.fromCodePoint(0x1F601)}Assertion failed ${array1} !== ${array2}`);
 
-  }
-};
 const findIndex = function (string, target) {
   let indices = [];
   for (let i = 0; i < string.length; i++) {
@@ -29,5 +22,6 @@ const letterPositions = function (sentence) {
   }
   return results;
 };
-console.log(letterPositions("lighthouse in the house"));
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;
+// console.log(letterPositions("lighthouse in the house"));
+// assertArraysEqual(letterPositions("hello").e, [1]);

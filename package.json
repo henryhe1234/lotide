@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@henryhe-1995/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "the lotide is an package containing all kinds of function to help comparison",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/henryhe1234/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Henry He henryhe1123@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/henryhe1234/lotide/issues"

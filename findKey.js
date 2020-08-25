@@ -16,4 +16,5 @@ const example = {
   "Akelarre":  { stars: 3 }
 
 }
-console.log(findKey(example,x => x.stars === 2));
+// console.log(findKey(example,x => x.stars === 2));
+module.exports = findKey;
