@@ -8,5 +8,4 @@ assertArraysEqual = (array1, array2) => {
 
   }
 };
-assertArraysEqual([1, 2, "3"], [3, 2, 1]);
 module.exports = assertArraysEqual;

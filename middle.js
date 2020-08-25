@@ -6,14 +6,7 @@ const eqArrays = (array1, array2) => {
   }
   return true;
 };
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2)) {
-    console.log(`${String.fromCodePoint(0x1F600)}Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`${String.fromCodePoint(0x1F601)}Assertion failed ${array1} !== ${array2}`);
 
-  }
-};
 const middle = (array) => {
   let answer = [];
   if(array.length <= 2){
@@ -27,4 +20,4 @@ const middle = (array) => {
   return answer;
 };
 
-assertArraysEqual(middle([1,2,3,67]),middle([1,2,3,4]));
+module.exports = middle;
